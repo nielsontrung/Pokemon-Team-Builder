@@ -1,0 +1,16 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 210px;
+  vertical-align: top;
+}
+.grid-item {
+  flex: 0 1 80px; /*  No stretching: */
+  margin: 5px;
+  height: 24px;
+}
+
+.type-effectiveness-container {
+  vertical-align: top;
+}

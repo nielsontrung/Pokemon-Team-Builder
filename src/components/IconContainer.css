@@ -1,0 +1,11 @@
+ul {
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div {
+  margin: auto;
+}

@@ -1,0 +1,39 @@
+:root {
+  --normal-fill-colour: "a7a87a";
+  --fighting-fill-colour: "ba2a28";
+  --flying-fill-colour: "a88eee";
+  --poison-fill-colour: "c183c1";
+  --ground-fill-colour: "ddc06c";
+  --rock-fill-colour: "b5a03f";
+  --bug-fill-colour: "a8b930";
+  --ghost-fill-colour: "705696";
+  --steel-fill-colour: "b8b8cf";
+  --fire-fill-colour: "e97e35";
+  --water-fill-colour: "6f8fee";
+  --grass-fill-colour: "7eca58";
+  --electric-fill-colour: "f4d03f";
+  --psychic-fill-colour: "f15287";
+  --ice-fill-colour: "9ed9d8";
+  --dragon-fill-colour: "722ef5";
+  --dark-fill-colour: "6e5849";
+  --fairy-fill-colour: "e997ab";
+
+  --normal-border-colour: "6d6d4f";
+  --fighting-border-colour: "7d1f1a";
+  --flying-border-colour: "6d5d9a";
+  --poison-border-colour: "662767";
+  --ground-border-colour: "907d47";
+  --rock-border-colour: "766828";
+  --bug-border-colour: "6d791f";
+  --ghost-border-colour: "493862";
+  --steel-border-colour: "787887";
+  --fire-border-colour: "985222";
+  --water-border-colour: "485d9a";
+  --grass-border-colour: "528339";
+  --electric-border-colour: "9e8728";
+  --psychic-border-colour: "a13959";
+  --ice-border-colour: "678d8d";
+  --dragon-border-colour: "4a1e9f";
+  --dark-border-colour: "48392f";
+  --fairy-border-colour: "986370";
+}
