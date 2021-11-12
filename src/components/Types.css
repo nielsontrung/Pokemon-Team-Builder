@@ -1,0 +1,126 @@
+.normal {
+  color: white;
+  background-color: #a7a87a;
+  border: 3px solid #6d6d4f;
+  border-radius: 25px;
+  text-align: center;
+}
+.fighting {
+  color: white;
+  background-color: #ba2a28;
+  border: 3px solid #7d1f1a;
+  border-radius: 25px;
+  text-align: center;
+}
+.flying {
+  color: white;
+  background-color: #a88eee;
+  border: 3px solid #6d5d9a;
+  border-radius: 25px;
+  text-align: center;
+}
+.poison {
+  color: white;
+  background-color: #c183c1;
+  border: 3px solid #662767;
+  border-radius: 25px;
+  text-align: center;
+}
+.ground {
+  color: white;
+  background-color: #ddc06c;
+  border: 3px solid #907d47;
+  border-radius: 25px;
+  text-align: center;
+}
+.rock {
+  color: white;
+  background-color: #b5a03f;
+  border: 3px solid #766828;
+  border-radius: 25px;
+  text-align: center;
+}
+.bug {
+  color: white;
+  background-color: #a8b930;
+  border: 3px solid #6d791f;
+  border-radius: 25px;
+  text-align: center;
+}
+.ghost {
+  color: white;
+  background-color: #705696;
+  border: 3px solid #493862;
+  border-radius: 25px;
+  text-align: center;
+}
+.steel {
+  color: white;
+  background-color: #b8b8cf;
+  border: 3px solid #787887;
+  border-radius: 25px;
+  text-align: center;
+}
+.fire {
+  color: white;
+  background-color: #e97e35;
+  border: 3px solid #985222;
+  border-radius: 25px;
+  text-align: center;
+}
+.water {
+  color: white;
+  background-color: #6f8fee;
+  border: 3px solid #485d9a;
+  border-radius: 25px;
+  text-align: center;
+}
+.grass {
+  color: white;
+  background-color: #7eca58;
+  border: 3px solid #528339;
+  border-radius: 25px;
+  text-align: center;
+}
+.electric {
+  color: white;
+  background-color: #f4d03f;
+  border: 3px solid #9e8728;
+  border-radius: 25px;
+  text-align: center;
+}
+.psychic {
+  color: white;
+  background-color: #f15287;
+  border: 3px solid #a13959;
+  border-radius: 25px;
+  text-align: center;
+}
+.ice {
+  color: white;
+  background-color: #9ed9d8;
+  border: 3px solid #678d8d;
+  border-radius: 25px;
+  text-align: center;
+}
+.dragon {
+  color: white;
+  background-color: #722ef5;
+  border: 3px solid #4a1e9f;
+  border-radius: 25px;
+  text-align: center;
+}
+.dark {
+  color: white;
+  background-color: #6e5849;
+  border: 3px solid #48392f;
+  border-radius: 25px;
+  text-align: center;
+}
+.fairy {
+  color: white;
+  background-color: #e997ab;
+  border: 3px solid #986370;
+  border-radius: 25px;
+  text-align: center;
+}

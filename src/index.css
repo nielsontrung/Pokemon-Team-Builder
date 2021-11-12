@@ -1,0 +1,131 @@
+/* tag selectors */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+div > p {
+  font-weight: bold;
+}
+
+ul {
+  margin: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li {
+  /* float: left; */
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+/* class selectors */
+.filter-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: center;
+}
+
+.filter-item {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  text-align: center;
+  align-items: center;
+}
+
+.pokemon-container {
+  max-width: 300px;
+  vertical-align: top;
+  margin: auto;
+}
+
+.type-container {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-evenly;
+  vertical-align: top;
+}
+
+.type-item {
+  width: 80px;
+}
+
+.type {
+  width: 80px;
+}
+
+.ability-container {
+  margin: 0;
+  padding: 0;
+}
+
+.no-margin {
+  margin: 4px 4px 4px 4px;
+  padding: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.abilities-container {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.ability {
+  margin: 0;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.move-set-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.icon-container {
+  margin: auto;
+  place-items: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 210px;
+}
+
+.grid-item {
+  flex: 0 1 80px; /*  No stretching: */
+  margin: 5px;
+  height: 24px;
+}
+
+.border {
+  border-style: solid;
+}

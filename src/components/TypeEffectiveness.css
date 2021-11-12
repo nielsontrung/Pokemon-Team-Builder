@@ -1,0 +1,20 @@
+.pancake-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 210px;
+  vertical-align: top;
+  margin: auto;
+}
+
+.pancake-item {
+  flex: 0 1 80px; /*  No stretching: */
+  margin: 5px;
+  height: 24px;
+}
+
+.type-effectiveness-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-auto-columns: 50px;
+}
