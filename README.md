@@ -1,7 +1,11 @@
 # Pokemon Team Builder
 
 A SPA for building your pokemon team! Pokemon can be filtered by Generation, Primary Type, Secondary Type, Abilities, Stats and by Name.
-Information and assets were collected from https://www.serebii.net, https://www.pokemondb.net, https://www.bulbagarden.net, https://www.pokemon.com/us.
+Information and assets were collected from: 
+- https://www.serebii.net 
+- https://www.pokemondb.net 
+- https://www.bulbagarden.net
+- https://www.pokemon.com/us
 
 ## Live Demo
 
