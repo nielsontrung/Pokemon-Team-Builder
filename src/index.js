@@ -11,14 +11,16 @@ import Icon from "./components/Icon";
 import Image from "./components/Image";
 import Abilities from "./components/Abilities";
 import Types from "./components/Types";
-import Move from "./components/Move";
+import MoveSet from "./components/MoveSet";
 // import variables
-import { gens, types, stats, abilities } from "./variables.js";
+import { regions, gens, types, stats, abilities } from "./variables.js";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      region: "all",
+      regions: regions,
       gen: "all",
       genFilter: gens,
       type: "all",
@@ -220,53 +222,61 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <div className={"team-container"}>
-          {team.map((pokemon) => {
-            let name = (
-              <p className={`no-margin-bottom`} style={{ fontSize: `18px` }}>
-                {pokemon.Name}
-              </p>
-            );
-            return (
-              <div className={`pokemon-container`} key={pokemon.No}>
-                <div
-                  onClick={() => {
-                    this.removeTeamMember(pokemon);
-                  }}
-                >
-                  <Image {...pokemon} />
+        <div className={`team-wrapper`}>
+          <div className={"team-container"}>
+            {team.map((pokemon) => {
+              let name = (
+                <p className={`no-margin-bottom`} style={{ fontSize: `18px` }}>
+                  {pokemon.Name}
+                </p>
+              );
+              return (
+                <div key={pokemon.No} className={`pokemon-container`}>
+                  <div
+                    onClick={() => {
+                      this.removeTeamMember(pokemon);
+                    }}
+                  >
+                    <Image {...pokemon} />
+                  </div>
+                  {name}
+                  <Types {...pokemon} />
+                  <Abilities {...pokemon} />
+                  <BarChart {...pokemon} />
+                  <TypeEffectiveness {...pokemon} />
+                  <MoveSet {...pokemon} />
                 </div>
-                {name}
-                <Types {...pokemon} />
-                <Abilities {...pokemon} />
-                <BarChart key={`${pokemon.No}-Stats`} {...pokemon} />
-              </div>
-            );
-          })}
-        </div>
-        <div className={"type-effectiveness-container"}>
-          <TypeEffectiveness team={team} />
-        </div>
-        <div className={`move-set-container`}>
-          {team.map((pokemon) => {
-            return (
-              <div
-                key={`${pokemon.No}`}
-                style={{
-                  display: `inline-block`,
-                  verticalAlign: `top`,
-                }}
-              >
-                <Move key={`${pokemon.No}-MoveSet`} {...pokemon} />
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
         <h2>Filters</h2>
         <div className={"filter-container"}>
           <div className={"filter-item"}>
+            <p>Region</p>
+            <select
+              className={`filter-option`}
+              name="region"
+              value={this.state.region}
+              onChange={handleFilter}
+            >
+              {regions.map((region) => {
+                return (
+                  <option key={region} value={region}>
+                    {region}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+          <div className={"filter-item"}>
             <p>Gen</p>
-            <select name="gen" value={this.state.gen} onChange={handleFilter}>
+            <select
+              className={`filter-option`}
+              name="gen"
+              value={this.state.gen}
+              onChange={handleFilter}
+            >
               {gens.map((gen) => {
                 return (
                   <option key={gen} value={gen}>
@@ -278,7 +288,12 @@ class App extends React.Component {
           </div>
           <div className={"filter-item"}>
             <p>Type</p>
-            <select name="type" value={this.state.type} onChange={handleFilter}>
+            <select
+              className={`filter-option`}
+              name="type"
+              value={this.state.type}
+              onChange={handleFilter}
+            >
               {types.map((type) => {
                 return (
                   <option key={type} value={type}>
@@ -291,6 +306,7 @@ class App extends React.Component {
           <div className={"filter-item"}>
             <p>Type2</p>
             <select
+              className={`filter-option`}
               name="type2"
               value={this.state.type2}
               onChange={handleFilter}
@@ -322,7 +338,12 @@ class App extends React.Component {
           </div>
           <div className={"filter-item"}>
             <p>Stats</p>
-            <select name="stat" value={this.state.stat} onChange={handleFilter}>
+            <select
+              className={`filter-option`}
+              name="stat"
+              value={this.state.stat}
+              onChange={handleFilter}
+            >
               {stats.map((stat) => {
                 return (
                   <option key={stat} value={stat}>
@@ -332,12 +353,14 @@ class App extends React.Component {
               })}
             </select>
           </div>
-          <div>
+          <div className={"filter-item"}>
             <p>Search</p>
             <input
+              className={`filter-option`}
               name="name"
               value={this.state.name}
               onChange={handleFilter}
+              style={{ maxWidth: `134px` }}
             ></input>
           </div>
         </div>
@@ -346,7 +369,6 @@ class App extends React.Component {
             {filterPokemon.map((pokemon) => {
               return (
                 <li
-                  className={"icon"}
                   key={pokemon.No}
                   onClick={() => {
                     if (
@@ -357,10 +379,14 @@ class App extends React.Component {
                     }
                   }}
                 >
-                  <Icon {...pokemon} />
-                  <p>
-                    <b>{pokemon.Name}</b>
-                  </p>
+                  <div>
+                    <div>
+                      <Icon {...pokemon} />
+                    </div>
+                    <div>
+                      <p>{pokemon.Name}</p>
+                    </div>
+                  </div>
                 </li>
               );
             })}

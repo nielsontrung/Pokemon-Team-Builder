@@ -4,9 +4,13 @@ function Abilities(props) {
   let abilities;
   if (props.Ability2 !== "") {
     let id1 = `${props.Name}-${props.Ability}`;
-    let id2 = `${props.Name}-${props.Ability}`;
-    let tooltip1 = abilitiesData[props.Ability].replace(".", "\n");
-    let tooltip2 = abilitiesData[props.Ability2].replace(".", "\n");
+    let id2 = `${props.Name}-${props.Ability2}`;
+    let tooltip1 = abilitiesData[props.Ability]
+      .replaceAll(".", " <br/>")
+      .replaceAll(",", " <br/>");
+    let tooltip2 = abilitiesData[props.Ability2]
+      .replaceAll(".", " <br/>")
+      .replaceAll(",", " <br/>");
     abilities = (
       <div className={`ability-container`}>
         <p className={`no-margin`}>Abilities</p>
@@ -18,13 +22,25 @@ function Abilities(props) {
             {props.Ability2}
           </p>
         </div>
-        <ReactTooltip id={id1} place="bottom" effect="solid"></ReactTooltip>
-        <ReactTooltip id={id2} place="bottom" effect="solid"></ReactTooltip>
+        <ReactTooltip
+          id={id1}
+          place="bottom"
+          multiline={true}
+          effect="solid"
+        ></ReactTooltip>
+        <ReactTooltip
+          id={id2}
+          place="bottom"
+          multiline={true}
+          effect="solid"
+        ></ReactTooltip>
       </div>
     );
   } else {
     let id = `${props.Name}-${props.Ability}`;
-    let tooltip = abilitiesData[props.Ability].replace(".", "\n");
+    let tooltip = abilitiesData[props.Ability]
+      .replaceAll(".", " <br/>")
+      .replaceAll(",", " <br/>");
     abilities = (
       <div className={`ability-container`}>
         <p className={`no-margin`}>Ability</p>
@@ -33,7 +49,12 @@ function Abilities(props) {
             {props.Ability}
           </p>
         </div>
-        <ReactTooltip id={id} place="bottom" effect="solid"></ReactTooltip>
+        <ReactTooltip
+          id={id}
+          place="bottom"
+          multiline={true}
+          effect="solid"
+        ></ReactTooltip>
       </div>
     );
   }
@@ -49,14 +70,21 @@ function Abilities(props) {
     );
   } else {
     let id = `${props.Name}-${props.HiddenAbility}`;
-    let tooltip = abilitiesData[props.HiddenAbility];
+    let tooltip = abilitiesData[props.HiddenAbility]
+      .replaceAll(".", " <br/>")
+      .replaceAll(",", " <br/>");
     hiddenAbility = (
       <div>
         <p className={`no-margin`}>Hidden Ability</p>
         <p data-for={id} data-tip={tooltip} className={`no-margin`}>
           {props.HiddenAbility}
         </p>
-        <ReactTooltip id={id} place="bottom" effect="solid"></ReactTooltip>
+        <ReactTooltip
+          id={id}
+          place="bottom"
+          multiline={true}
+          effect="solid"
+        ></ReactTooltip>
       </div>
     );
   }

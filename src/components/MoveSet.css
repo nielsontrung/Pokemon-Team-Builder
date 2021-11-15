@@ -1,0 +1,39 @@
+.move {
+  margin: auto;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: left;
+  color: white;
+  padding: 0px 2px 0px 2px;
+}
+
+.move > p {
+  color: white;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.category-img-container {
+  vertical-align: middle;
+  float: right;
+}
+.move-description-container {
+  display: flex;
+}
+
+.move-category-img {
+  border-radius: 50%;
+  max-width: 25px;
+  max-height: 25px;
+  cursor: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}

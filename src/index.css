@@ -33,33 +33,55 @@ ul {
 li {
   /* float: left; */
   color: white;
-  padding: 16px;
+  padding: 0px 6px 0px 6px;
   text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 /* class selectors */
 .filter-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .filter-item {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  text-align: center;
+  flex: 1 1 150px; /*  Stretching: */
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
+}
+
+.filter-option {
+  min-width: 150px;
+}
+
+.team-wrapper {
+  margin: auto;
+  padding: 0;
+  display: flex;
 }
 
 .team-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
   text-align: center;
   align-items: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: auto;
 }
 
 .pokemon-container {
   max-width: 300px;
+  display: inline-block;
   vertical-align: top;
   margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .type-container {
@@ -70,10 +92,6 @@ li {
 }
 
 .type-item {
-  width: 80px;
-}
-
-.type {
   width: 80px;
 }
 
@@ -103,14 +121,10 @@ li {
   padding-left: 4px;
 }
 
-.move-set-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-}
-
 .icon-container {
   margin: auto;
   place-items: center;
+  padding: 50px;
 }
 
 .grid-container {
@@ -128,4 +142,14 @@ li {
 
 .border {
   border-style: solid;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+  margin: auto;
 }

@@ -1,126 +1,178 @@
-.normal {
-  color: white;
-  background-color: #a7a87a;
-  border: 3px solid #6d6d4f;
+.round-border-white-text {
   border-radius: 25px;
   text-align: center;
+  color: white;
+}
+
+.type {
+  width: 80px;
+  padding: 1px 0px 3px 0px;
+}
+
+/* fill colours for type and effectiveness */
+.normal {
+  background-color: #a7a87a;
 }
 .fighting {
-  color: white;
   background-color: #ba2a28;
-  border: 3px solid #7d1f1a;
-  border-radius: 25px;
-  text-align: center;
 }
 .flying {
-  color: white;
   background-color: #a88eee;
-  border: 3px solid #6d5d9a;
-  border-radius: 25px;
-  text-align: center;
 }
 .poison {
-  color: white;
-  background-color: #c183c1;
-  border: 3px solid #662767;
-  border-radius: 25px;
-  text-align: center;
+  background-color: #9c3b9e;
 }
 .ground {
-  color: white;
   background-color: #ddc06c;
-  border: 3px solid #907d47;
-  border-radius: 25px;
-  text-align: center;
 }
 .rock {
-  color: white;
   background-color: #b5a03f;
-  border: 3px solid #766828;
-  border-radius: 25px;
-  text-align: center;
 }
 .bug {
-  color: white;
   background-color: #a8b930;
-  border: 3px solid #6d791f;
-  border-radius: 25px;
-  text-align: center;
 }
 .ghost {
-  color: white;
   background-color: #705696;
-  border: 3px solid #493862;
-  border-radius: 25px;
-  text-align: center;
 }
 .steel {
-  color: white;
   background-color: #b8b8cf;
-  border: 3px solid #787887;
-  border-radius: 25px;
-  text-align: center;
 }
 .fire {
-  color: white;
   background-color: #e97e35;
-  border: 3px solid #985222;
-  border-radius: 25px;
-  text-align: center;
 }
 .water {
-  color: white;
   background-color: #6f8fee;
-  border: 3px solid #485d9a;
-  border-radius: 25px;
-  text-align: center;
 }
 .grass {
-  color: white;
   background-color: #7eca58;
-  border: 3px solid #528339;
-  border-radius: 25px;
-  text-align: center;
 }
 .electric {
-  color: white;
   background-color: #f4d03f;
-  border: 3px solid #9e8728;
-  border-radius: 25px;
-  text-align: center;
 }
 .psychic {
-  color: white;
   background-color: #f15287;
-  border: 3px solid #a13959;
-  border-radius: 25px;
-  text-align: center;
 }
 .ice {
-  color: white;
   background-color: #9ed9d8;
-  border: 3px solid #678d8d;
-  border-radius: 25px;
-  text-align: center;
 }
 .dragon {
-  color: white;
   background-color: #722ef5;
-  border: 3px solid #4a1e9f;
-  border-radius: 25px;
-  text-align: center;
 }
 .dark {
-  color: white;
   background-color: #6e5849;
-  border: 3px solid #48392f;
-  border-radius: 25px;
-  text-align: center;
 }
 .fairy {
-  color: white;
   background-color: #e997ab;
+}
+
+/* lighter fill colours for pokemon images */
+.normal-light {
+  background-color: #d3d49a;
+}
+.fighting-light {
+  background-color: #e23330;
+}
+.flying-light {
+  background-color: #baa4f4;
+}
+.poison-light {
+  background-color: #c183c1;
+}
+.ground-light {
+  background-color: #ddc06c;
+}
+.rock-light {
+  background-color: #cfb747;
+}
+.bug-light {
+  background-color: #bfd236;
+}
+.ghost-light {
+  background-color: #a37edb;
+}
+.steel-light {
+  background-color: #c9c9e3;
+}
+.fire-light {
+  background-color: #ff9e5c;
+}
+.water-light {
+  background-color: #92adfe;
+}
+.grass-light {
+  background-color: #92ea65;
+}
+.electric-light {
+  background-color: #f8da60;
+}
+.psychic-light {
+  background-color: #fe6c9d;
+}
+.ice-light {
+  background-color: #a9ebea;
+}
+.dragon-light {
+  background-color: #a174f8;
+}
+.dark-light {
+  background-color: #957965;
+}
+.fairy-light {
+  background-color: #e997ab;
+}
+
+/* type border colours */
+.normal-border {
+  border: 3px solid #6d6d4f;
+}
+.fighting-border {
+  border: 3px solid #7d1f1a;
+}
+.flying-border {
+  border: 3px solid #6d5d9a;
+}
+.poison-border {
+  border: 3px solid #662767;
+}
+.ground-border {
+  border: 3px solid #907d47;
+}
+.rock-border {
+  border: 3px solid #766828;
+}
+.bug-border {
+  border: 3px solid #6d791f;
+}
+.ghost-border {
+  border: 3px solid #493862;
+}
+.steel-border {
+  border: 3px solid #787887;
+}
+.fire-border {
+  border: 3px solid #985222;
+}
+.water-border {
+  border: 3px solid #485d9a;
+}
+.grass-border {
+  border: 3px solid #528339;
+}
+.electric-border {
+  border: 3px solid #9e8728;
+}
+.psychic-border {
+  border: 3px solid #a13959;
+}
+.ice-border {
+  border: 3px solid #678d8d;
+}
+.dragon-border {
+  border: 3px solid #4a1e9f;
+}
+.dark-border {
+  border: 3px solid #48392f;
+}
+.fairy-border {
   border: 3px solid #986370;
-  border-radius: 25px;
-  text-align: center;
 }

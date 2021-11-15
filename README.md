@@ -1,3 +1,12 @@
+# Pokemon Team Builder
+
+A SPA for building your pokemon team! Pokemon can be filtered by Generation, Primary Type, Secondary Type, Abilities, Stats and by Name.
+Information and assets were collected from https://www.serebii.net, https://www.pokemondb.net, https://www.bulbagarden.net, https://www.pokemon.com/us.
+
+## Live Demo
+
+- https://nielsontrung.github.io/pokemon-team-builder/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

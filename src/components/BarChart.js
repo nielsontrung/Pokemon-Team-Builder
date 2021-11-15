@@ -46,6 +46,13 @@ function BarChart(props) {
           scales: {
             x: {
               beginAtZero: true,
+              grid: {
+                offset: false,
+              },
+              ticks: {
+                color: `black`,
+                stepSize: 50,
+              },
             },
           },
         }}

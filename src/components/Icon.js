@@ -1,24 +1,36 @@
 import "./Icon.css";
-import { fillColour, borderColour } from "../variables";
-
+import "./Types.css";
+import { missingPokemonId, fillColour } from "../variables";
 const Icon = (props) => {
-  let fill = fillColour[props.Type];
-  let border = "47685e";
-  if (props.Type2 === "") border = borderColour[props.Type];
-  else border = borderColour[props.Type2];
-  return (
-    <img
-      className={`icon`}
-      height={90}
-      width={90}
-      style={{
-        backgroundColor: `#${fill}`,
-        border: `3px solid #${border}`,
-      }}
-      src={`${process.env.PUBLIC_URL}/icons/${props.No}.png`}
-      alt={props.Name}
-    ></img>
-  );
+  let type = props.Type;
+  let type2;
+  if (props.Type2 !== "") type2 = props.Type2;
+  else type2 = props.Type;
+  let pokemon;
+  if (missingPokemonId.includes(props.No)) {
+    pokemon = (
+      <div
+        className={`${type}-light ${type2}-border icon`}
+        style={{ color: `#${fillColour[type]}` }}
+      >
+        -
+        <img
+          src={`${process.env.PUBLIC_URL}/icons/${props.No}.png`}
+          alt={props.Name}
+        ></img>
+      </div>
+    );
+  } else {
+    pokemon = (
+      <div className={`${type}-light ${type2}-border  icon`}>
+        <img
+          src={`${process.env.PUBLIC_URL}/icons/${props.No}.png`}
+          alt={props.Name}
+        ></img>
+      </div>
+    );
+  }
+  return pokemon;
 };
 
 export default Icon;
